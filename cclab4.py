@@ -1,8 +1,9 @@
 def travel_budget(travel_guide):
   total_cost = 0
   for state,cost in travel_guide.items():
-    total_cost += state[cost]
+    total_cost += cost
     print(f"{state}:{cost}")
+  return total_cost
 
 travel_guide = {"Chennai":12000, "Mumbai":13000, "Delhi":14000}
 
