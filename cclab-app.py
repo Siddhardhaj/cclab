@@ -1,13 +1,12 @@
-from flask import Flask
+
+from flask import Flask, render_template
+
 app = Flask(__name__)
 
-@app.route('/sid', methods=['GET'])
-def sid():
-    return "Hello Siddhardh"
-
-@app.route('/hai', methods=['GET'])
-def hai():
-    return "Hello World"
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
+
