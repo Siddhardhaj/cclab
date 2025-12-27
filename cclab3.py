@@ -1,4 +1,8 @@
-int a,b
-print("Enter a number:")
-print("Enter b number:")
-print(a+b)
+
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+sum = a + b
+
+print("Sum =", sum)
